@@ -1,0 +1,93 @@
+body {
+    font-family: 'Sixtyfour+Convergence';
+    font-size: 22px;
+}
+
+header {
+    margin-bottom: 20px; /*внешний отступ*/
+}
+
+main img{
+    margin-left: -8px;
+}
+
+h1 {
+    text-align: center; /*горизонт выравнивание текста внутри элемента*/
+    position: relative; /*относительное позиция*/
+    bottom: -18px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*вертикальное выравнивание дочерних элементов в боксе*/
+}
+
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+main h2,
+header h2 {
+    color: #333;
+}
+
+table {
+    border-collapse: collapse; /*границы ячеек объединяются в одну границу*/
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    margin-left: -10px;
+    margin-bottom: -10px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    position: sticky;
+}
+  
+
+@media (max-width: 800px) {
+    .body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
